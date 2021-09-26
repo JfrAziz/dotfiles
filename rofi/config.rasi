@@ -1,0 +1,103 @@
+/*******************************************************************************
+ * User                 : Jafar Aziz           
+ *******************************************************************************/
+
+configuration {
+    font                : "JetBrains Mono Medium 10";
+    scroll-method       : 0;
+
+}
+* {
+    bg-color            : rgba(59, 66, 82, 0.55);
+    fg-color            : #b8bdc5;
+    accent-color        : #88c0d0;
+    bd-color            : #6c71c4;
+    selected-color      : #bae67e;
+
+    background-color    : @bg-color;
+    text-color          : @fg-color;
+
+    margin              : 0;
+}
+
+#window {
+    location            : center;
+    background-color    : @bg-color;
+    border              : 3;
+    width               : 700;
+    border-color        : @bd-color;
+}
+
+
+#entry {
+    text-color          : @fg-color;
+    padding             : 8;
+}
+
+#inputbar {
+    children            :   [ entry ];
+}
+
+
+
+#message {
+    padding             : 10;
+}
+#textbox {
+    padding             : 8;
+}
+
+
+#listview {
+    lines               : 10;
+    columns             : 2;
+    spacing             : 0;
+    padding             : 4 0;
+    scrollbar           : false;
+}
+
+#element {
+    padding             : 8;
+    spacing             : 8;
+}
+
+#element normal normal {
+    background-color    : @bg-color;
+    text-color          : @fg-color;
+}
+#element normal active {
+    background-color    : @bg-color;
+    text-color          : @fg-color;
+}
+#element normal urgent {
+    background-color    : @bg-color;
+    text-color          : @accent-color;
+}
+#element selected normal {
+    background-color    : @bg-color;
+    text-color          : @selected-color;
+}
+#element selected active {
+    background-color    : @bg-color;
+    text-color          : @selected-color;
+}
+#element selected urgent {
+    background-color    : @bg-color;
+    text-color          : @accent-color;
+}
+#element alternate normal {
+    background-color    : @bg-color;
+    text-color          : @fg-color;
+}
+#element alternate active {
+    background-color    : @bg-color;
+    text-color          : @fg-color;
+}
+#element alternate urgent {
+    background-color    : @bg-color;
+    text-color          : @accent-color;
+}
+
+#mode-switcher {
+    padding             : 0;
+}
