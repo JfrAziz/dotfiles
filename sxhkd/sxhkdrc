@@ -1,4 +1,4 @@
-#
+
 # wm independent hotkeys
 #
 
@@ -133,6 +133,9 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + r
+	bspc node @parent -R 90
 #
 # Special hotkeys
 #
@@ -166,6 +169,9 @@ Print
 
 super+Print
   ~/.config/bspwm/scripts/screenshot.sh
+
+super+shift+p
+  import png:- | xclip -selection clipboard -t image/png
 
 # Shortcuts
 super + w 
